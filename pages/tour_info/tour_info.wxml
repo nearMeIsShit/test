@@ -1,0 +1,46 @@
+<!--tour_info.wxml-->
+<view class="container">
+    <view class="banner">
+        <image src="{{tour_img}}" mode="scaleToFill"></image>
+        <text class="title">{{tour_name}}</text>
+    </view> 
+    <view class="desc">
+        <text class="title">景点介绍</text>
+        <text class="content" decode="true">
+        {{desc}}
+        </text>
+    </view>
+    <view class="controls">
+        <view class="box>">
+	        <view class="song_pross">
+	            <text class="cur_time">{{cur_time}}</text>
+	            <slider min="0" max="{{duration}}" value="{{current}}" bindchange="changeSongPross" />
+	            <text class="total_time">{{total_time}}</text>
+	        </view>
+	        <view class="bts">
+	            <view class="play_bt" bindtap="playSong"><image src="/image/tour_info/{{isPlaying?'pause':'play'}}.png" /></view>
+	        </view>
+        </view>
+    </view>
+    <view class="opening">开放时间<text>{{open_time}}</text></view>
+    <view class="myvideo">
+      <video id="myVideo" autoplay="true" objectFit="fill" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" binderror="videoErrorCallback" danmu-list="{{danmuList}}" controls></video>
+    </view>
+    <view class="review_area">
+        <view class="title">来自<text>{{comment_total}}</text>位游客的评论</view>
+        <view class="review_list" wx:for="{{array}}">
+            <view class="box">
+	            <image class="portrait" src="{{item.avatarUrl}}"></image>
+	            <text class="name">{{item.nickName}}</text>
+	            <text class="date">{{item.comment_time}}</text>
+            </view>
+            <text class="content">{{item.comment}}</text>
+        </view>
+    </view>
+    <view class="comment">
+        <view class="input">
+            <input placeholder="评论" value="{{inputstr}}"  bindinput="inputkeystr" placeholder-class="placeholder" cursor-spacing="30px" />
+        </view>
+        <image class="send" bindtap="comment" src="/image/tour_info/ic_comment.png"></image>
+    </view>
+</view>

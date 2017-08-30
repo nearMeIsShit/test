@@ -1,0 +1,12 @@
+<!--server.wxml-->
+<view class="container">
+    <view class="server-list" wx:for="{{array}}">
+	    <navigator url="{{item.tourl}}" hover-class="navigator-hover" bindtap="calling" data-title="{{item.title}}">
+	        <view class="cont">
+                <text class="title">{{item.title}}</text>
+                <text class="desc">{{item.summary}}</text>
+	        </view>
+	        <image class="pic" src="{{item.img}}"></image>	          
+	     </navigator>
+    </view>
+</view>

@@ -1,0 +1,8 @@
+<!--tour.wxml-->
+<view class="container">
+    <view class="tour-list" wx:for="{{array}}" bindtap="toInfo" data-Id="{{item.id}}">
+        <image class="pic" src="{{item.img}}"></image>
+        <text class="title">{{item.title}}</text>
+        <text class="desc">{{item.summary}}</text>
+    </view>
+</view>

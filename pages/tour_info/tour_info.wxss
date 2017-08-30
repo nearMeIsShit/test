@@ -1,0 +1,220 @@
+/**tour_info.wxss**/
+.container{
+  padding:0;
+  margin:0;
+}
+.banner{
+  width:100%;
+  height:420rpx;
+  position: relative;
+}
+.banner image{
+  width:100%;
+  height:100%;
+}
+.banner .title{
+  position:absolute;
+  font-size:34rpx;
+  color:#fff;
+  left:25rpx;
+  bottom:25rpx;
+  font-weight: bold;
+}
+.desc{
+  width:100%;
+  box-sizing:border-box;
+  padding: 25rpx;
+}
+.desc .title{
+  display: block;
+  width:100%;
+  height:44rpx;
+  line-height:44rpx;
+  font-size:34rpx;
+  color:#333;
+  font-weight:bold;
+}
+.desc .content{
+  width:100%;
+  font-size: 26rpx;
+  color:#333;
+  text-indent:30rpx; 
+}
+/**评论区**/
+.review_area{
+  width:100%;
+  box-sizing:border-box;
+  padding:0 20rpx;
+}
+.review_area .title{
+  font-size:34rpx;
+  color:#333;
+  margin-left: 5rpx;
+  line-height:44rpx;
+}
+.review_list{
+  box-sizing:border-box;
+  width:100%;
+  padding:20rpx 5rpx;
+  border-bottom:1px solid #dcdcdc;
+}
+.review_list .box{
+  width:100%;
+  overflow: hidden;
+  margin-bottom:20rpx;
+}
+.box .portrait{
+  width:60rpx;
+  height:60rpx;
+  float: left;
+}
+.box .name{
+  float: left;
+  font-size: 24rpx;
+  line-height: 60rpx;
+  margin-left: 20rpx;
+}
+.box .date{
+  float:right;
+  font-size: 24rpx;
+  line-height: 60rpx;
+  color:#999;
+  margin-right:5rpx;
+}
+.review_list .content{
+  display: block;
+  padding:0 5rpx;
+  font-size: 30rpx;
+  color:#666;
+}
+.review_list:last-child{
+  border:none;
+}
+/**底栏**/
+.comment{
+  width:100%;
+  height:110rpx;
+  box-sizing:border-box;
+  border-top:1px solid #eee;
+  box-shadow: 0 0 10px #ccc;
+  background: #fff;
+
+}
+.comment .input{
+  width:80%;
+  height:70rpx;
+  line-height:70rpx;
+  font-size: 30rpx;
+  border-radius:70rpx;
+  background: #ececec;
+  float: left;
+  margin:20rpx 0 0 30rpx;
+}
+.comment .input input{
+  width:90%;
+  height:100%;
+  line-height:70rpx;
+  margin-left:40rpx;
+  color:#333;
+}
+.placeholder{
+  color:#c7c6c6;
+}
+.comment .send{
+  width:48rpx;
+  height:48rpx;
+  margin:35rpx 0 0 30rpx;
+}
+/**开放时间**/
+.opening{
+  font-size:34rpx;
+  margin-bottom:30rpx;
+  color:#638f92; 
+}
+.opening text{
+  color:#333;
+  margin-left:10rpx;
+}
+/**video**/
+.myvideo{
+  width:100%;
+  height:400rpx;
+  margin-bottom:30rpx;
+}
+.myvideo video{
+  width:100%;
+  height:100%;
+  z-index:100;
+}
+/**音频**/
+.song_tx{
+    width: 500rpx;
+    height: 500rpx;
+    border-radius: 50%;
+    border: 2rpx solid red;
+}
+
+.song_tx image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.song_info{
+    text-align: center;
+    margin-bottom: 10rpx;
+}
+.song_tt{
+    color: blueviolet;
+    line-height: 80rpx;
+}
+.controls{
+    width: 100%;
+    box-sizing:border-box;
+    padding:0 20rpx;
+    background: #fff;
+    margin:30rpx 0;
+}
+.controls .box{
+  border-bottom:1px solid #dcdcdc;
+}
+.song_pross{
+    display: -webkit-box;
+}
+.song_pross slider{
+    -webkit-box-flex: 1;
+}
+.song_pross text{
+    position: relative;
+    top: 24rpx;
+    display: inline-block;
+    font-size: 26rpx;
+    width: 60rpx;
+    text-align: center;
+    color: #000;
+}
+
+.bts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40rpx;
+}
+.bts image{
+    width: 100%;
+    height: 100%;
+}
+.show_bt,.prev_bt,.next_bt,.list_bt{
+    width: 64rpx;
+    height: 64rpx;
+}
+.prev_bt{
+    transform: rotate(180deg);
+}
+.play_bt{
+    width: 100rpx;
+    height: 100rpx;
+}
+
+
+
+

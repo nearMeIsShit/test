@@ -1,0 +1,75 @@
+/**program_info.wxss**/
+page{
+  background: #eee;
+}
+.container{
+  padding: 0;
+  margin:0;
+}
+.program_list{
+  background: #fff;
+  width:100%;
+  height:180rpx;
+  box-sizing: border-box;
+  padding:30rpx 20rpx;
+  margin-top:20rpx;
+  border-radius: 4rpx;
+  overflow: hidden;
+  font-size:26rpx;
+  color:#333;
+  box-shadow: 0 4rpx 5px #ddd;
+}
+.pic{
+  float:left;
+  width:120rpx;
+  height:120rpx;
+  border-radius:10rpx;
+  margin-right:30rpx;
+}
+.detail{
+  float: left;
+  width:520rpx;
+}
+.detail .title{
+  width:100%;
+  height:28rpx;
+  font-size:28rpx;
+  line-height:28rpx;
+  color:#333;
+  margin-bottom: 10rpx;
+  font-weight:bold;
+}
+.detail .cont{
+  width:100%;
+}
+.detail .cont .desc{
+  float: left;
+  width:60%;
+  font-size:24rpx;
+  line-height:28rpx;
+  color:#8e8c8c;
+  box-sizing: border-box;
+  padding-right:40rpx;
+}
+.detail .cont .other{
+  float: right;
+  width:40%;
+}
+.detail .cont .other image{
+  width:24rpx;
+  height:24rpx;
+  margin-right:15rpx;
+  vertical-align: middle;
+}
+.detail .cont .other .time{
+  font-size:26rpx;
+  color:#80a4a7;
+  line-height:28rpx;
+  margin-bottom:10rpx;
+  font-weight:bold;
+}
+.detail .cont .other .address{
+  font-size:26rpx;
+  color:#000; 
+  line-height:28rpx;
+}

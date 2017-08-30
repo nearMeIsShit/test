@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<!-- <image class="bg" src="/image/index/im_bg.png"></image> -->
+<view class="container">
+  <image class="logo" src="/image/index/im_logo.png"></image>
+  <image class="code" bindtap="bindScanCode" src="/image/index/ic_scan.png"></image>
+  <text class="desc">扫一扫景点二维码，获取景点介绍信息</text>
+  <view class="search">
+      <input  placeholder="请输入景点名称" bindinput="inputkeystr" placeholder-class="placeholder" name="keystr" confirm-type="search" />
+      <image bindtap="searchtour" class="search-btn" src="/image/index/ic_search.png"></image>
+  </view>
+</view>

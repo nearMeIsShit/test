@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="chat_box">
+        <view class="chat_list {{item.isbot?'server_chat':'visitor_chat'}}" wx:for="{{array}}" data-key="{{item.filePath}}" bindtap="gotoPlay">
+          <image src="/image/chat/{{item.isbot?'server':'visitor'}}.png"></image>
+          <view class="chat_cont" wx:if="{{item.isvoice}}"><image src="/image/chat/ic_voice1.png"></image></view>
+          <text class="chat_cont" wx:else="">{{item.desc}}</text>
+        </view>
+
+        <!-- <view class="chat_list server_chat">
+          <image src="/image/chat/server.png"></image>
+          <text class="chat_cont">您好！欢迎您来到天河潭风景区</text>
+        </view>
+        <view class="chat_list visitor_chat">
+          <image src="/image/chat/visitor.png"></image>
+          <text class="chat_cont">请问客服中心在哪？</text>
+        </view>
+        <view class="chat_list server_chat">
+          <image src="/image/chat/server.png"></image>
+          <text class="chat_cont">大门右转直走300米处</text>
+        </view> -->
+    </view>
+
+    <view class="input_box">
+        <image class="voice" src="/image/chat/ic_voice.png" bindtap="voice_toggle"></image>
+        <view class="input">
+          <input  bindinput="inputchat" value="{{chatstr}}" />
+          <text bindtouchstart="touchdown" bindtouchend="touchup" class="usevoice" wx:if="{{usevoice}}">按住 说话</text>
+        </view>
+        <image bindtap="chat" class="send" src="/image/chat/ic_send.png"></image>
+    </view>
+
+    <view  wx:if="{{isSpeaking}}"  class="speak-style">
+      <image class="sound-style" src="/image/chat/voice_icon_speech_sound_1.png" ></image>
+      <image wx:if="{{j==2}}" class="sound-style" src="/image/chat/voice_icon_speech_sound_2.png" ></image>
+      <image wx:if="{{j==3}}" class="sound-style" src="/image/chat/voice_icon_speech_sound_3.png" ></image>
+      <image wx:if="{{j==4}}" class="sound-style" src="/image/chat/voice_icon_speech_sound_4.png" ></image>
+      <image wx:if="{{j==5}}"class="sound-style" src="/image/chat/voice_icon_speech_sound_5.png" ></image>
+    </view>
+</view>
+
+

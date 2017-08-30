@@ -1,0 +1,19 @@
+<!--program_info.wxml-->
+<view class="container">
+    <view class="program_box">
+      <view class="program_list" wx:for="{{array}}">
+         <image class="pic" src="{{item.img}}"></image>
+         <view class="detail">
+            <view class="title">{{item.title}}</view> 
+            <view class="cont">
+                <text class="desc">{{item.desc}}</text>
+                <view class="other">
+                    <view class="time"><image src="/image/program_info/ic_time.png"></image>{{item.time}}</view>
+                    <view class="address"><image src="/image/program_info/ic_location.png"></image>{{item.address}}</view>
+                </view>
+            </view> 
+         </view>
+         
+      </view>
+    </view>
+</view>

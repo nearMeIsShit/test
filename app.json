@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/server/server",
+    "pages/chat/chat",
+    "pages/tour/tour",
+    "pages/tour_info/tour_info",
+    "pages/program_info/program_info",
+    "pages/restaurant/restaurant",
+    "pages/toilet/toilet",
+    "pages/hotel/hotel",
+    "pages/tour_search/tour_search"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#6cdeff",
+    "navigationBarTitleText": "天河潭",
+    "navigationBarTextStyle":"white"
+  },
+   "tabBar": {
+    "color": "#a9a9a9",
+    "selectedColor": "#638f92",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "image/ic_home.png",
+      "selectedIconPath": "image/ic_home1.png"
+    }, {
+      "pagePath": "pages/tour/tour",
+      "text": "景点",
+      "iconPath": "image/ic_spot.png",
+      "selectedIconPath": "image/ic_spot1.png"
+    }, {
+      "pagePath": "pages/server/server",
+      "text": "服务",
+      "iconPath": "image/ic_service.png",
+      "selectedIconPath": "image/ic_service1.png"
+    }]
+  }
+}

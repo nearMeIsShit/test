@@ -1,0 +1,50 @@
+//index.js
+//获取应用实例
+var app = getApp()
+Page({
+  data:{
+    array:[{
+      id:1,
+      img:"/image/program_info/dcgz.png",
+      title:"多彩贵阳",
+      address:"景区大舞台",
+      desc:"“多彩贵州”系列活动，挖掘、展示贵州丰富多彩的民族民间文化",
+      time:"11:00-12:00"
+    },{
+      id:2,
+      img:"/image/program_info/lsw.png",
+      title:"芦笙舞",
+      address:"侗族民俗区",
+      desc:"以男子边吹“芦笙”同时以下肢的灵活舞动为主要特征的传统民间舞蹈",
+      time:"13:00-14:00"
+    },{
+      id:3,
+      img:"/image/program_info/im_shuixiujingguan.png",
+      title:"水秀景观",
+      address:"水秀舞台",
+      desc:"采用全息投影技术、呈现出“水上芭蕾、民族歌舞”的表演模式",
+      time:"19:00-20:00"
+    },{
+      id:4,
+      img:"/image/program_info/hdz.png",
+      title:"多花灯展",
+      address:"太阳广场",
+      desc:"采用全息投影技术、呈现出“水上芭蕾、民族歌舞”的表演模式",
+      time:"19:00-22:00"
+    },{
+      id:5,
+      img:"/image/program_info/sys.png",
+      title:"三月三",
+      address:"侗族民俗区",
+      desc:"歌节不仅是弘扬民族文化的盛会，亦是民族经济交流的盛会",
+      time:"三月初三"
+    },{
+      id:6,
+      img:"/image/program_info/syb.png",
+      title:"四月八",
+      address:"太阳广场",
+      desc:"在这一天人们会举行各种欢庆仪式，不仅表达丰收的喜悦",
+      time:"四月初八"
+    }]
+  }
+})
